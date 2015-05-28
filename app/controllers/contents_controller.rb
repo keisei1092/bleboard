@@ -1,4 +1,5 @@
 class ContentsController < ApplicationController
+  protect_from_forgery with: :null_session
   before_action :set_content, only: [:show, :edit, :update, :destroy]
 
   # GET /contents
